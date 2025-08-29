@@ -1,11 +1,11 @@
 package com.student;
 
 public class Student {
-    String name;
-    String Department;
-    int RollNo;
-    float age;
-    static String collegename = "kiet";
+    private String name;
+    private String Department;
+    private int RollNo;
+    private float age;
+    private static String collegename = "kiet";
 
     public Student(String name, String department, int rollNo, float age) {
         this.name = name;
@@ -16,6 +16,46 @@ public class Student {
 
     public  Student( ) {
 
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDepartment() {
+        return Department;
+    }
+
+    public int getRollNo() {
+        return RollNo;
+    }
+
+    public float getAge() {
+        return age;
+    }
+
+    public static String getCollegename() {
+        return collegename;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setDepartment(String department) {
+        this.Department = department;
+    }
+
+    public void setRollNo(int rollNo) {
+        this.RollNo = rollNo;
+    }
+
+    public void setAge(float age) {
+        this.age = age;
+    }
+
+    public static void setCollegename(String collegename) {
+        Student.collegename = collegename;
     }
 
     public void  search(int roll_no){
