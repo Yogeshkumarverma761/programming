@@ -1,7 +1,7 @@
 package com.student;
 
 public class Student {
-    private String name;
+     String name;
     private String Department;
     private int RollNo;
     private float age;

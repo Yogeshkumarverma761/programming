@@ -12,6 +12,7 @@ public class Library {
    }
 
    public int Book(){
+
        return borrowed_books;
    }
 
