@@ -32,8 +32,11 @@ public class BookingApp extends Thread{
 
 
 
-        BookingApp t1 = new BookingApp(b1,7);
-        BookingApp t2 = new BookingApp(b2,8);
+        BookingApp t1 = new BookingApp(b1,8);
+        BookingApp t2 = new BookingApp(b2,7);
+
+        t1.setPriority(4);
+        t2.setPriority(7);
 
         t1.start();
         t2.start();

@@ -22,12 +22,24 @@ public class WithThreads extends Thread{
         WithThreads t2=new WithThreads("Data processing");
         WithThreads t3=new WithThreads("Computing");
         long start_time=System.currentTimeMillis();
+
+        t1.setPriority(1);
+        t2.setPriority(5);
+        t3.setPriority(3);
+
+
         t1.start();
         t2.start();
         t3.start();
+
         t1.join();
         t2.join();
         t3.join();
+
+//        System.out.println(t1.getPriority());
+//        System.out.println(t2.getPriority());
+//        System.out.println(t3.getPriority());
+
         long end_time=System.currentTimeMillis();
         System.out.println("The difference is "+(end_time-start_time));
     }
